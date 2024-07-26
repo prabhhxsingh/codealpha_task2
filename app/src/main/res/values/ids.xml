@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layoutProgress" type="id" />
+    <item name="buttonStartWorkout" type="id" />
+    <item name="buttonSetGoals" type="id" />
+    <item name="buttonViewProgress" type="id" />
+    <item name="layoutGoals" type="id" />
+    <item name="layoutWorkout" type="id" />
+    <item name="editTextExerciseName" type="id" />
+    <item name="editTextRepetitions" type="id" />
+    <item name="editTextDuration" type="id" />
+    <item name="buttonSaveWorkout" type="id" />
+</resources>

@@ -1,0 +1,105 @@
+<!-- res/layout/activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Start Workout Button -->
+    <Button
+        android:id="@+id/buttonStartWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Workout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <!-- Set Goals Button -->
+    <Button
+        android:id="@+id/buttonSetGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Goals"
+        android:layout_below="@id/buttonStartWorkout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- View Progress Button -->
+    <Button
+        android:id="@+id/buttonViewProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Progress"
+        android:layout_below="@id/buttonSetGoals"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Workout Layout -->
+    <RelativeLayout
+        android:id="@+id/layoutWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!-- Exercise Name -->
+        <EditText
+            android:id="@+id/editTextExerciseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exercise Name"
+            android:layout_margin="16dp" />
+
+        <!-- Duration -->
+        <EditText
+            android:id="@+id/editTextDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration (minutes)"
+            android:inputType="number"
+            android:layout_below="@id/editTextExerciseName"
+            android:layout_margin="16dp" />
+
+        <!-- Repetitions -->
+        <EditText
+            android:id="@+id/editTextRepetitions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repetitions"
+            android:inputType="number"
+            android:layout_below="@id/editTextDuration"
+            android:layout_margin="16dp" />
+
+        <!-- Save Workout Button -->
+        <Button
+            android:id="@+id/buttonSaveWorkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Workout"
+            android:layout_below="@id/editTextRepetitions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+    <!-- Goals Layout -->
+    <RelativeLayout
+        android:id="@+id/layoutGoals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!-- Design your UI for setting goals here -->
+
+    </RelativeLayout>
+
+    <!-- Progress Layout -->
+    <RelativeLayout
+        android:id="@+id/layoutProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <!-- Design your UI for viewing progress here -->
+
+    </RelativeLayout>
+
+</RelativeLayout>
